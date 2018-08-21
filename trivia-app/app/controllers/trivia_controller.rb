@@ -1,5 +1,6 @@
-class QuestionsController < ApplicationController
+class TriviaController < ApplicationController
   def index
+    @trivia = Trivia.all
   end
 
   def show

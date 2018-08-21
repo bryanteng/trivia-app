@@ -1,0 +1,13 @@
+All Trivia Questions
+<br>
+<br>
+<% @trivia.each do |trivia| %>
+<li> Trivia Question:<%= trivia.question %>
+<br>
+difficulty level: <%= trivia.difficulty %>
+<br>
+Category Name: <%= trivia.category.name %>
+<br>
+<br>
+</li>
+<% end %>

@@ -133,7 +133,127 @@ data = {
 "Digest",
 "Look",
 "Read"
-]}]}
+]},{
+"category": "Entertainment: Film",
+"type": "multiple",
+"difficulty": "medium",
+"question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing\tspree?",
+"correct_answer": "Westworld",
+"incorrect_answers": [
+"Runaway",
+"Android",
+"The Terminators"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "medium",
+"question": "What engine did the original &quot;Half-Life&quot; run on?",
+"correct_answer": "GoldSrc",
+"incorrect_answers": [
+"Source",
+"Quake",
+"Unreal"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "easy",
+"question": "What Nationality is D.Va from Overwatch?",
+"correct_answer": "Korean",
+"incorrect_answers": [
+"Japanese",
+"Chinese",
+"Vietnamese "
+]
+},
+{
+"category": "Entertainment: Board Games",
+"type": "multiple",
+"difficulty": "medium",
+"question": "What special item did the creators of Cards Against Humanity ship for their Black Friday pack?",
+"correct_answer": "Bull Feces",
+"incorrect_answers": [
+"A Card Expansion",
+"A Racist Toy",
+"Cat Urine"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which company made the Japanese RPG &quot;Dragon Quest&quot;?",
+"correct_answer": "Square Enix",
+"incorrect_answers": [
+"Capcom",
+"Konami",
+"Blizzard"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "easy",
+"question": "Which one of these songs did the group &quot;Men At Work&quot; NOT make?",
+"correct_answer": "Safety Dance",
+"incorrect_answers": [
+"Down Under",
+"Who Can It Be Now?",
+"It&#039;s a Mistake"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which famous 90&#039;s rap album is commonly referred to as &quot;The Bible of Hip Hop&quot;?",
+"correct_answer": "Illmatic",
+"incorrect_answers": [
+"The Low End Theory",
+"The Chronic",
+"Enter The Wu-Tang (36 Chambers)"
+]
+},
+{
+"category": "Entertainment: Japanese Anime & Manga",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which of the following manga have the most tankouban volumes?",
+"correct_answer": "Golgo 13",
+"incorrect_answers": [
+"JoJo&#039;s Bizarre Adventure",
+"Detective Conan",
+"One Piece"
+]
+},
+{
+"category": "History",
+"type": "multiple",
+"difficulty": "medium",
+"question": "What was the total length of the Titanic?",
+"correct_answer": "882 ft | 268.8 m",
+"incorrect_answers": [
+"759 ft | 231.3 m",
+"1042 ft | 317.6 m",
+"825 ft | 251.5 m"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "hard",
+"question": "Which team won the &quot;Tom Clancy&#039;s Rainbow Six Siege&quot; Invitational Event February 2017 in the PC Category?",
+"correct_answer": "Continuum",
+"incorrect_answers": [
+"GIFU",
+"Santos Dexterity",
+"eRa Eternity"
+]
+}
+]}
 
 
 

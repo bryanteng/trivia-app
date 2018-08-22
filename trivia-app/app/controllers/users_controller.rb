@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+   #before_action :authorized, except: [:new, :index, :show]
 
   def show
   end

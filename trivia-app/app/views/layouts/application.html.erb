@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <% if !is_loggedin? %>
+      <%= form_tag "/logout", method: :delete do %>
+      <%= submit_tag "Logout" %>
+      <% end %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

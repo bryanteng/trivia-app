@@ -1,4 +1,4 @@
 class Answer < ApplicationRecord
-  belongs_to :trivia
+  belongs_to :trivium
   validates :answer, presence: true
 end

@@ -5,8 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Category.destroy_all
+User.destroy_all
+Trivium.destroy_all
+Answer.destroy_all
 
-trebek = User.create(username: "Trebekian")
+trebek = User.create(username: "Trebekian", password: "123")
 
 data = {
 "response_code": 0,
@@ -90,7 +94,7 @@ data = {
 "question": "What was the nickname given to the Hughes H-4 Hercules, a heavy transport flying boat which achieved flight in 1947?",
 "correct_answer": "Spruce Goose",
 "incorrect_answers": [
-"Noah&#039;s Ark",
+"Noah's Ark",
 "Fat Man",
 "Trojan Horse"
 ]
@@ -116,14 +120,14 @@ data = {
 "incorrect_answers": [
 "Pupcia",
 "Polszka",
-"P&oacute;land"
+"Póland"
 ]
 },
 {
 "category": "General Knowledge",
 "type": "multiple",
 "difficulty": "easy",
-"question": "The New York Times slogan is, &ldquo;All the News That&rsquo;s Fit to&hellip;&rdquo;",
+"question": "The New York Times slogan is, 'All the News That's Fit to - '",
 "correct_answer": "Print",
 "incorrect_answers": [
 "Digest",
@@ -136,6 +140,6 @@ data = {
 data[:"results"].each do |key,value|
 category = Category.find_or_create_by(name: key[:category])
 trivia = Trivium.find_or_create_by(difficulty: key[:difficulty], question: key[:question], category_id: category.id  )
-answer = Answer.create(answer: key[:correct_answer], is_correct: true, trivia_id: trivia.id)
-key[:incorrect_answers].each{|x| Answer.create(answer: x, is_correct: false, trivia_id: trivia.id) }
+Answer.find_or_create_by(answer: key[:correct_answer], is_correct: true, trivium_id: trivia.id)
+key[:incorrect_answers].each{|x| Answer.find_or_create_by(answer: x, is_correct: false, trivium_id: trivia.id) }
 end

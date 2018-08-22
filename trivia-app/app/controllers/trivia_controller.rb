@@ -1,4 +1,5 @@
 class TriviaController < ApplicationController
+  before_action :authorized
   def index
     @trivia = Trivium.all
   end
@@ -23,6 +24,5 @@ class TriviaController < ApplicationController
 
   def update
   end
-
 
 end

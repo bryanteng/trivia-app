@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_21_130604) do
+ActiveRecord::Schema.define(version: 2018_08_21_130605) do
 
   create_table "answers", force: :cascade do |t|
     t.string "answer"
     t.boolean "is_correct"
-    t.integer "trivia_id"
+    t.integer "trivium_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

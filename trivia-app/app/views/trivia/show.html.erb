@@ -1,2 +1,14 @@
-<h1>Questions#show</h1>
-<p>Find me in app/views/questions/show.html.erb</p>
+<%= @trivia.category.name %>
+<br>
+<br>
+
+Trivia Question:<%= @trivia.question %>
+<br>
+difficulty level: <%= @trivia.difficulty %>
+<br>
+<br>
+
+<%= form_for @answer, url: trivia_answer_path do |f| %>
+<%= f.collection_radio_buttons(:answer,@trivia.answers.shuffle, :id, :answer ) %>
+<%= f.submit "Sumbit Answer" %>
+<% end %>

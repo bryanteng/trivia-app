@@ -1,2 +1,7 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<%= @category.name %>
+
+Questions:
+<% @category.trivia.each do |trivia| %>
+<li> <%= link_to(trivia.question, trivium_path(trivia)) %> </li>
+
+<% end %>

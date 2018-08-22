@@ -135,8 +135,7 @@ data = {
 
 data[:"results"].each do |key,value|
 category = Category.find_or_create_by(name: key[:category])
-trivia = Trivia.find_or_create_by(difficulty: key[:difficulty], question: key[:question], category_id: category.id  )
+trivia = Trivium.find_or_create_by(difficulty: key[:difficulty], question: key[:question], category_id: category.id  )
 answer = Answer.create(answer: key[:correct_answer], is_correct: true, trivia_id: trivia.id)
 key[:incorrect_answers].each{|x| Answer.create(answer: x, is_correct: false, trivia_id: trivia.id) }
-
 end

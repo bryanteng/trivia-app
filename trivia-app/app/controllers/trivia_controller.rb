@@ -1,9 +1,15 @@
 class TriviaController < ApplicationController
   def index
-    @trivia = Trivia.all
+    @trivia = Trivium.all
   end
 
   def show
+    @trivia = Trivium.find(params[:id])
+    @answer = Answer.new
+  end
+
+  def trivia_answer
+    @answer = Answer.find(params["answer"]["answer"])
   end
 
   def create
@@ -17,4 +23,6 @@ class TriviaController < ApplicationController
 
   def update
   end
+
+
 end

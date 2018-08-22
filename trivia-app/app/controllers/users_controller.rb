@@ -1,19 +1,24 @@
 class UsersController < ApplicationController
-  def index
-  end
 
   def show
   end
 
-  def create
-  end
-
   def new
+    @user = User.new
   end
 
-  def edit
+  def create
+    @user = User.new(users_params)
+    if @user.save
+      redirect_to login_path
+    else
+      redirect_to new_user_path
+    end
   end
 
-  def update
+
+  private
+  def users_params
+    params.require(:user).permit(:username, :password)
   end
 end

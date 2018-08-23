@@ -1,6 +1,6 @@
 <h1>Categories</h1>
 <ul>
-  <% @trivia.map{|trivia| trivia.category.name}.uniq.each do |cat| %>
-  <li> <%= link_to(cat, category_path(Category.find_by(name: cat).id)) %></li>
+  <% @categories.each do |cat| %>
+    <li><%= link_to cat.name, category_path(cat) %></li>
   <% end %>
 </ul>

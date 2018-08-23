@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :trivia, only: [:show, :new, :create, :edit, :update, :delete]
   resources :users
 
+  get '/trivia', to: 'categories#index'
   post "/trivia/:id", to: "trivia#trivia_answer", as: "trivia_answer"
 
   get '/login', to: "sessions#new", as: "login"

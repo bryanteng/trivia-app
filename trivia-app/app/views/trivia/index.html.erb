@@ -5,22 +5,6 @@ Categories:
 <% @trivia.map{|trivia| trivia.category.name}.uniq.each do |cat| %>
 <li> <%= link_to(cat, category_path(Category.find_by(name: cat).id)) %></li>
 <% end %>
-
-
-
-
 <br>
-<% @trivia.each do |trivia| %>
-<li> Trivia Question:<%= CGI.unescapeHTML(trivia.question) %>
-<br>
-difficulty level: <%= trivia.difficulty %>
-<br>
-Category Name: <%= trivia.category.name %>
-<br>
-Trivia Answers: <% trivia.answers.shuffle.each do |answer| %>
 
-<li> <%= CGI.unescapeHTML(answer.answer) %> </li>
-<% end %>
-<br>
-</li>
-<% end %>
+<%= link_to("create your own",new_trivium_path) %>

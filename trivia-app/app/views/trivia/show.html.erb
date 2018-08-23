@@ -12,3 +12,6 @@ difficulty level: <%= @trivia.difficulty %>
 <%= f.collection_radio_buttons(:answer,@trivia.answers.shuffle, :id, :answer ) %>
 <%= f.submit "Sumbit Answer" %>
 <% end %>
+
+<br>
+<%= link_to "Delete", trivium_path(@trivia), :confirm => "Are you sure?", method: :delete %>

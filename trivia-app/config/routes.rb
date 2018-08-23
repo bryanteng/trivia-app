@@ -2,8 +2,9 @@ Rails.application.routes.draw do
 
   resources :categories
   resources :trivia
-  resources :users, only: [:new,:create,:show]
+  resources :users, only: [:index,:new,:create,:show, :edit, :update, :destroy]
   resources :answers
+
 
   post "/trivia/:id", to: "trivia#trivia_answer", as: "trivia_answer"
 

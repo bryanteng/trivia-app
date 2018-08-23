@@ -1,7 +1,7 @@
 class TriviaController < ApplicationController
   before_action :authorized
   def index
-    @trivia = Trivium.all.shuffle[0..10]
+    @trivia = Trivium.all
   end
 
   def show

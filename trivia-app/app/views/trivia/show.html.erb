@@ -1,14 +1,13 @@
-<%= @trivia.category.name %>
-<br>
-<br>
+<h1><%= @trivia.category.name %></h1>
+<h2><%= CGI.unescapeHTML(@trivia.question) %></h2>
 
-Trivia Question:<%= @trivia.question %>
-<br>
-difficulty level: <%= @trivia.difficulty %>
-<br>
-<br>
+<% difficulty = @trivia.difficulty %>
+<!-- What could break if nothing was subtracted from difficulty.size? -->
+Difficulty Level: <%=difficulty[0].upcase + difficulty[1, difficulty.size - 1]%><br>
 
-<%= form_for @answer, url: trivia_answer_path do |f| %>
-<%= f.collection_radio_buttons(:answer,@trivia.answers.shuffle, :id, :answer ) %>
-<%= f.submit "Sumbit Answer" %>
+<%= form_for @answer, url: trivia_answer_path do | f | %>
+  <h3><%= f.collection_radio_buttons(:answer, @trivia.answers.shuffle, :id,
+                                      :answer) %></h3>
+
+  <%= f.submit "Sumbit Answer" %>
 <% end %>

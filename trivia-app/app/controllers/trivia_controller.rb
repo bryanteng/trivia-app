@@ -10,6 +10,7 @@ class TriviaController < ApplicationController
   end
 
   def trivia_answer
+    @trivia = Trivium.find(params[:id])
     @answer = Answer.find(params["answer"]["answer"])
   end
 

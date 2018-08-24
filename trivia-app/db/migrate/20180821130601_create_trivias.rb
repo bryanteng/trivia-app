@@ -1,6 +1,6 @@
 class CreateTrivias < ActiveRecord::Migration[5.2]
   def change
-    create_table :trivias do |t|
+    create_table :trivia do |t|
       t.string :question
       t.string :difficulty
       t.integer :category_id

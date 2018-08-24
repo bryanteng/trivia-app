@@ -1,7 +1,11 @@
 class TriviaController < ApplicationController
   before_action :authorized
   def index
-    @trivia = Trivium.where("id NOT in (?)", current_user.trivia.pluck(:id))
+    if current_user.trivia.blank?
+      @trivia = Trivium.all
+    else
+      @trivia = Trivium.where("id NOT in (?)", current_user.trivia.pluck(:id))
+    end
   end
 
   def show

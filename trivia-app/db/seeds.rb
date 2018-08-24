@@ -633,126 +633,105 @@ data = { results: [
       ]
     },
     # 12. Entertainment: Music
-    {
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "easy",
-question: "Which English guitarist has the nickname &quot;Slowhand&quot;?",
-correct_answer: "Eric Clapton",
-incorrect_answers: [
-"Mark Knopfler",
-"Jeff Beck",
-"Jimmy Page"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "easy",
-question: "Who is the frontman of the band 30 Seconds to Mars?",
-correct_answer: "Jared Leto",
-incorrect_answers: [
-"Gerard Way",
-"Matthew Bellamy",
-"Mike Shinoda"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "medium",
-question: "Which band released songs such as &quot;Electric Feel&quot;, &quot;Kids&quot;, and &quot;Time to Pretend&quot;?",
-correct_answer: "MGMT",
-incorrect_answers: [
-"Passion Pit",
-"Phoenix",
-"Franz Ferdinand"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "easy",
-question: "What was the name of singer Frank Ocean&#039;s second studio album, which was released on August 20, 2016?",
-correct_answer: "Blonde",
-incorrect_answers: [
-"Brunette",
-"Black",
-"Burgundy"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "medium",
-question: "Which of these is NOT the name of an album released by American rapper Viper?",
-correct_answer: "The Life of Pablo",
-incorrect_answers: [
-"Kill Urself My Man",
-"You&#039;ll Cowards Don&#039;t Even Smoke Crack",
-"Yo Wife Handcuffin&#039; Me"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "easy",
-question: "Which artist released the 2012 single &quot;Harlem Shake&quot;, which was used in numerous YouTube videos in 2013?",
-correct_answer: "Baauer",
-incorrect_answers: [
-"RL Grime",
-"NGHTMRE",
-"Flosstradamus"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "hard",
-question: "Which band is the longest active band in the world with no breaks or line-up changes?",
-correct_answer: "U2",
-incorrect_answers: [
-"Radiohead",
-"Rush",
-"Rolling Stones"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "medium",
-question: "What animal is featured on the cover of English electronic music group The Prodigy&#039;s album, &quot;The Fat of the Land&quot;?",
-correct_answer: "Crab",
-incorrect_answers: [
-"Fox",
-"Elephant",
-"Tiger"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "easy",
-question: "Which Beatles album does NOT feature any of the band members on it&#039;s cover?",
-correct_answer: "The Beatles (White Album)",
-incorrect_answers: [
-"Rubber Soul",
-"Abbey Road",
-"Magical Mystery Tour"
-]
-},
-{
-category: "Entertainment: Music",
-type: "multiple",
-difficulty: "easy",
-question: "What album did The Lumineers release in 2016?",
-correct_answer: "Cleopatra",
-incorrect_answers: [
-"Winter",
-"The Lumineers",
-"Tracks From The Attic"
-]
-}
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "easy",
+      question: "Which English guitarist has the nickname &quot;Slowhand&quot;?",
+      correct_answer: "Eric Clapton",
+      incorrect_answers: [
+        "Mark Knopfler",
+        "Jeff Beck",
+        "Jimmy Page"
+      ]
+    },
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "easy",
+      question: "Who is the frontman of the band 30 Seconds to Mars?",
+      correct_answer: "Jared Leto",
+      incorrect_answers: [
+        "Gerard Way",
+        "Matthew Bellamy",
+        "Mike Shinoda"
+      ]
+    },
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "medium",
+      question: "Which band released songs such as &quot;Electric Feel&quot;, &quot;Kids&quot;, and &quot;Time to Pretend&quot;?",
+      correct_answer: "MGMT",
+      incorrect_answers: [
+        "Passion Pit",
+        "Phoenix",
+        "Franz Ferdinand"
+      ]
+    },
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "easy",
+      question: "What was the name of singer Frank Ocean&#039;s second studio album, which was released on August 20, 2016?",
+      correct_answer: "Blonde",
+      incorrect_answers: [
+        "Brunette",
+        "Black",
+        "Burgundy"
+      ]
+    },
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "medium",
+      question: "Which of these is NOT the name of an album released by American rapper Viper?",
+      correct_answer: "The Life of Pablo",
+      incorrect_answers: [
+        "Kill Urself My Man",
+        "You&#039;ll Cowards Don&#039;t Even Smoke Crack",
+        "Yo Wife Handcuffin&#039; Me"
+      ]
+    },
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "easy",
+      question: "Which artist released the 2012 single &quot;Harlem Shake&quot;, which was used in numerous YouTube videos in 2013?",
+      correct_answer: "Baauer",
+      incorrect_answers: [
+        "RL Grime",
+        "NGHTMRE",
+        "Flosstradamus"
+      ]
+    },
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "hard",
+      question: "Which band is the longest active band in the world with no breaks or line-up changes?",
+      correct_answer: "U2",
+      incorrect_answers: [
+        "Radiohead",
+        "Rush",
+        "Rolling Stones"
+      ]
+    },
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "medium",
+      question: "What animal is featured on the cover of English electronic music group The Prodigy&#039;s album, &quot;The Fat of the Land&quot;?",
+      correct_answer: "Crab",
+      incorrect_answers: [
+        "Fox",
+        "Elephant",
+        "Tiger"
+      ]
+    },
+    {category: "Entertainment: Music",
+      type: "multiple",
+      difficulty: "easy",
+      question: "Which Beatles album does NOT feature any of the band members on it&#039;s cover?",
+      correct_answer: "The Beatles (White Album)",
+      incorrect_answers: [
+        "Rubber Soul",
+        "Abbey Road",
+        "Magical Mystery Tour"
+      ]
+    }
   ]
 }
 

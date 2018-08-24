@@ -11,7 +11,10 @@
     <%= javascript_include_tag 'application',
                               'data-turbolinks-track': 'reload' %>
 
-    <%= render 'layouts/partials/shim' %>
+    <%= render 'layouts/partials/shim' %>              
+    <% if is_loggedin? %>
+      <%= "Your score: #{current_user.score}" %>
+    <% end %>
   </head>
 
   <body>
@@ -21,7 +24,7 @@
       <% if !is_loggedin? %>
 
         <%= form_tag "/logout", method: :delete do %>
-          <%= submit_tag "Logout" %>
+          <%= submit_tag "Log Out" %>
         <% end %>
 
       <% end %>
@@ -29,6 +32,6 @@
 
       <%= render 'layouts/partials/footer' %>
     </div>
-
+    
   </body>
 </html>

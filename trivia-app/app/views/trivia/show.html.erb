@@ -10,5 +10,7 @@
                                         :answer) %></h3>
 
     <%= f.submit "Submit Answer", class: "btn btn-lg btn-primary" %>
-  <% end %>
+  <% end %><br>
+
+  <%= link_to "Delete", trivium_path(@trivia), :confirm => "Are you sure?", method: :delete %>
 </div>

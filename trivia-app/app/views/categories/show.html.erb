@@ -1,16 +1,14 @@
+<h1><%= pluralize(@category.trivia.count, "#{@category.name} Question")  %></h1>
 
-<%= pluralize(@category.trivia.count , "#{@category.name} Question")  %> :
-
-<%  if current_user.trivia.blank? %>
+<% if current_user.trivia.blank? %>
   <% @category.trivia.each do |trivia| %>
-  <li> <%= link_to(CGI.unescapeHTML(trivia.question), trivium_path(trivia)) %> </li>
+    <li><%=link_to(CGI.unescapeHTML(trivia.question), trivium_path(trivia))%> </li>
   <% end %>
+
 <% else %>
-
-<% @category.trivia.where("id NOT in (?)", current_user.trivia.pluck(:id)).each do |trivia| %>
-<li> <%= link_to(CGI.unescapeHTML(trivia.question), trivium_path(trivia)) %> </li>
+  <% @category.trivia.where("id NOT in (?)", current_user.trivia.pluck(:id)).each do |trivia| %>
+    <li><%= link_to(CGI.unescapeHTML(trivia.question), trivium_path(trivia)) %></li>
+  <% end %>
 <% end %>
-<% end %>
-
 
 <h2><%= link_to 'See All Categories', categories_path %></h2>

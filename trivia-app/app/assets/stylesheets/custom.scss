@@ -46,6 +46,12 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+// Adjust Radio Buttons
+input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 5px;
+  vertical-align: top;
+}
 
 /* Header */
 #logo {

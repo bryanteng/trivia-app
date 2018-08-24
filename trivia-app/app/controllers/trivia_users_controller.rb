@@ -1,0 +1,5 @@
+class TriviaUsersController < ApplicationController
+
+  
+
+end

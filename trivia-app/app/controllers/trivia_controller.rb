@@ -1,7 +1,7 @@
 class TriviaController < ApplicationController
   before_action :authorized
   def index
-    @trivia = Trivium.all
+    @trivia = Trivium.where("id NOT in (?)", current_user.trivia.pluck(:id))
   end
 
   def show
@@ -11,9 +11,12 @@ class TriviaController < ApplicationController
 
   def trivia_answer
     @answer = Answer.find(params["answer"]["answer"])
+    trivia = Trivium.find(@answer.trivium_id)
+    TriviaUser.create(user_id: current_user.id,trivia_id: trivia.id)
+
     if @answer.is_correct
       # byebug
-      trivia = Trivium.find(@answer.trivium_id)
+
       if trivia.difficulty == "easy"
         current_user.update(score: current_user.score+50)
       elsif trivia.difficulty == "medium"

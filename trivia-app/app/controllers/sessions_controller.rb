@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     if User.find_by(username: params[:username]).blank?
-      flash[:error] = "Username does not exist"
+      flash[:error] = "The username you’ve entered doesn’t match any account."
       redirect_to login_path
     else
       @user = User.find_by(username: params[:username])
@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         session[:user_id] = @user.id
         redirect_to categories_path
       else
-        flash[:error] = "Password is incorrect"
+        flash[:error] = "The password you’ve entered is incorrect."
         redirect_to login_path
       end
     end

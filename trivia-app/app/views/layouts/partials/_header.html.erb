@@ -1,12 +1,17 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "quiz master", '#', id: "logo" %>
+    <%= link_to "quiz master", categories_path, id: "logo" %>
 
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",   categories_path %></li>
-        <li><%= link_to "Help",   '#' %></li>
-        <li><%= link_to "Log In", login_path %></li>
+
+        <% if is_loggedin? %>
+          <li><%= link_to "Your Score: #{current_user.score}" %></li>
+          <li><%= link_to "Log Out", logout_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Log In", login_path %></li>
+        <% end %>
       </ul>
     </nav>
 

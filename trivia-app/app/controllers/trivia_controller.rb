@@ -19,7 +19,7 @@ class TriviaController < ApplicationController
     @answer = Answer.find(params["answer"]["answer"])
 
     trivia = Trivium.find(@answer.trivium_id)
-    TriviaUser.create(user_id: current_user.id,trivia_id: trivia.id)
+    TriviaUser.create(user_id: current_user.id,trivium_id: trivia.id)
 
     if @answer.is_correct
       # byebug

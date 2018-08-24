@@ -6,6 +6,8 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    # Check if user has [unanswered] questions in the category
+      # If yes, show all 
     @category = Category.find(params[:id])
   end
 

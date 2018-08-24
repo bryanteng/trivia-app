@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <title> Quiz Master </title>
     <%= csrf_meta_tags %>
     <!-- <%= csp_meta_tag %> -->
@@ -9,28 +10,12 @@
 
     <%= javascript_include_tag 'application',
                               'data-turbolinks-track': 'reload' %>
-    <!-- HTML5 shim -->
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
+
+    <%= render 'layouts/partials/shim' %>
   </head>
 
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "Quiz Master", '#', id: "logo" %>
-
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Help",   '#' %></li>
-            <li><%= link_to "Log in", '#' %></li>
-          </ul>
-        </nav>
-
-      </div>
-    </header>
+    <%= render 'layouts/partials/header' %>
 
     <div class="container">
       <% if !is_loggedin? %>
@@ -42,6 +27,8 @@
       <% end %>
       <%= yield %>
 
+      <%= render 'layouts/partials/footer' %>
     </div>
+
   </body>
 </html>

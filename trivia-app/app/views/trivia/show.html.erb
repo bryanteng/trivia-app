@@ -1,6 +1,8 @@
 <div class="center jumbotron">
   <%= render 'question' %>
-
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
   <% difficulty = @trivia.difficulty %>
   <!-- What could break if nothing was subtracted from difficulty.size? -->
   Difficulty Level: <%=difficulty[0].upcase + difficulty[1, difficulty.size - 1]%><br>

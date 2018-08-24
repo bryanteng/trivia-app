@@ -7,14 +7,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% if is_loggedin? %>
+      <%= "Your score: #{current_user.score}" %>
+    <% end %>
   </head>
 
   <body>
-    <% if !is_loggedin? %>
+    <% if is_loggedin? %>
       <%= form_tag "/logout", method: :delete do %>
       <%= submit_tag "Logout" %>
       <% end %>
     <% end %>
     <%= yield %>
   </body>
+
+
 </html>

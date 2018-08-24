@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :answers
   resources :categories
-  resources :trivia, only: [:show, :new, :create, :edit, :update, :delete]
+  resources :trivia
   resources :users
 
   get '/trivia', to: 'categories#index'

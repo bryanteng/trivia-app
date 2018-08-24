@@ -11,3 +11,6 @@ Difficulty Level: <%=difficulty[0].upcase + difficulty[1, difficulty.size - 1]%>
 
   <%= f.submit "Sumbit Answer" %>
 <% end %>
+
+<br>
+<%= link_to "Delete", trivium_path(@trivia), :confirm => "Are you sure?", method: :delete %>

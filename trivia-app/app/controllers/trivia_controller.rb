@@ -11,7 +11,9 @@ class TriviaController < ApplicationController
 
   def trivia_answer
     @trivia = Trivium.find(params[:id])
+    # byebug
     @answer = Answer.find(params["answer"]["answer"])
+
     trivia = Trivium.find(@answer.trivium_id)
     TriviaUser.create(user_id: current_user.id,trivia_id: trivia.id)
 
@@ -26,6 +28,7 @@ class TriviaController < ApplicationController
         current_user.update(score: current_user.score+200)
       end
     end
+
   end
 
   def new

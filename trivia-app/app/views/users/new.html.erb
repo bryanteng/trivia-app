@@ -1,12 +1,19 @@
-<h3>Create a New User!</h3>
+<div class="center jumbotron">
+  <h1>Create a New User!</h1>
 
-<%= form_for @user do |f| %>
-<%= f.label :username %>
-<%= f.text_field :username %>
-<%= f.label :password %>
-<%= f.text_field :password %>
-<%= f.submit %>
-<% end %>
-<br> 
+  <%= form_for @user do |f| %>
+    <div>
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </div>
 
-<%= link_to("Already have an account? Click here!", login_path) %>
+    <div>
+      <%= f.label :password %>
+      <%= f.text_field :password %>
+    </div>
+
+    <%= f.submit %>
+  <% end %><br>
+
+  <%= link_to("Already have an account? Click here!", login_path) %>
+</div>

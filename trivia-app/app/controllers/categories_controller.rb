@@ -2,6 +2,7 @@ class CategoriesController < ApplicationController
   before_action :authorized
 
   def index
+    @categories = Category.all
   end
 
   def show
@@ -18,5 +19,8 @@ class CategoriesController < ApplicationController
   end
 
   def update
+  end
+
+  def destroy
   end
 end

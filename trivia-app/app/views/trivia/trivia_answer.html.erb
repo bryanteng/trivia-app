@@ -1,8 +1,12 @@
-<br>
-<br>
+<h1><%= @trivia.category.name %></h1>
+<h3><%= CGI.unescapeHTML(@trivia.question) %></h3>
 
-<h1>Your answer is : <%= @answer.is_correct %></h1>
+Your answer was <em><%= @answer.answer %>. </em><br>
+<% if @answer.is_correct %>
+  <h2> You are correct! </h2>
+<% else %>
+  <h2> I'm sorry; the correct answer was <em><%= @trivia.answers[0].answer %></em>. </h2>
+<% end %>
 
-<br>
-<br>
-<%= link_to("Answer another trivia question!", trivia_path) %>
+<h3><%= link_to "Go Back to #{@trivia.category.name}",
+        category_path(@trivia.category) %></h3>

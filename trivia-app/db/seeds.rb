@@ -731,13 +731,593 @@ data = { results: [
         "Abbey Road",
         "Magical Mystery Tour"
       ]
-    }
+    },
+    {
+"category": "Entertainment: Film",
+"type": "multiple",
+"difficulty": "hard",
+"question": "What was the last Marx Brothers film to feature Zeppo?",
+"correct_answer": "Duck Soup",
+"incorrect_answers": [
+"A Night at the Opera",
+"A Day at the Races",
+"Monkey Business"
+]
+},
+{
+"category": "Entertainment: Television",
+"type": "multiple",
+"difficulty": "easy",
+"question": "Which character was played by Dustin Diamond in the sitcom &#039;Saved by the Bell&#039;?",
+"correct_answer": "Screech",
+"incorrect_answers": [
+"Zack",
+"Mr. Belding",
+"A.C. Slater"
+]
+},
+{
+"category": "General Knowledge",
+"type": "multiple",
+"difficulty": "easy",
+"question": "Where is the train station &quot;Llanfair&shy;pwllgwyngyll&shy;gogery&shy;chwyrn&shy;drobwll&shy;llan&shy;tysilio&shy;gogo&shy;goch&quot;?",
+"correct_answer": "Wales",
+"incorrect_answers": [
+"Moldova",
+"Czech Republic",
+"Denmark"
+]
+},
+{
+"category": "Science & Nature",
+"type": "multiple",
+"difficulty": "easy",
+"question": "How many objects are equivalent to one mole?",
+"correct_answer": "6.022 x 10^23",
+"incorrect_answers": [
+"6.002 x 10^22",
+"6.022 x 10^22",
+"6.002 x 10^23"
+]
+},
+{
+"category": "Animals",
+"type": "boolean",
+"difficulty": "medium",
+"question": "The Ceratosaurus, a dinosaur known for having a horn on the top of its nose, is also known to be a decendent of the Tyrannosaurus Rex.",
+"correct_answer": "False",
+"incorrect_answers": [
+"True"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Typically, how many keys are on a piano?",
+"correct_answer": "88",
+"incorrect_answers": [
+"24",
+"12",
+"96"
+]
+},
+{
+"category": "Animals",
+"type": "boolean",
+"difficulty": "medium",
+"question": "An octopus can fit through any hole larger than its beak.",
+"correct_answer": "True",
+"incorrect_answers": [
+"False"
+]
+},
+{
+"category": "General Knowledge",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Rolex is a company that specializes in what type of product?",
+"correct_answer": "Watches",
+"incorrect_answers": [
+"Cars",
+"Computers",
+"Sports equipment"
+]
+},
+{
+"category": "Science: Computers",
+"type": "multiple",
+"difficulty": "easy",
+"question": "What does GHz stand for?",
+"correct_answer": "Gigahertz",
+"incorrect_answers": [
+"Gigahotz",
+"Gigahetz",
+"Gigahatz"
+]
+},
+{
+"category": "Politics",
+"type": "boolean",
+"difficulty": "easy",
+"question": "There was a satirical candidate named &quot;Deez Nuts&quot; running in the 2016 US presidential elections.",
+"correct_answer": "True",
+"incorrect_answers": [
+"False"
+]
+},
+{
+"category": "History",
+"type": "multiple",
+"difficulty": "easy",
+"question": "Which of the following African countries was most successful in resisting colonization?",
+"correct_answer": "Ethiopia",
+"incorrect_answers": [
+"C&ocirc;te d&rsquo;Ivoire",
+"Congo",
+"Namibia"
+]
+},
+{
+"category": "General Knowledge",
+"type": "boolean",
+"difficulty": "medium",
+"question": "There are 86400 seconds in a day.",
+"correct_answer": "True",
+"incorrect_answers": [
+"False"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "hard",
+"question": "Why was the character Trevor Philips discharged from the Air Force?",
+"correct_answer": "Mental Health Issues",
+"incorrect_answers": [
+"Injuries",
+"Disease",
+"Danger to Others"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which Queen song was covered by Brittany Murphy in the 2006 film &quot;Happy Feet&quot;?",
+"correct_answer": "Somebody to Love",
+"incorrect_answers": [
+"Under Pressure",
+"Flash",
+"Bohemian Rhapsody"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "easy",
+"question": "&quot;Tomb Raider&quot; icon Lara Croft was originally called...",
+"correct_answer": "Laura Cruz",
+"incorrect_answers": [
+"Laura Craft",
+"Laura Croft",
+"Lara Craft"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which CS:GO eSports team won the major event ESL One Cologne 2016?",
+"correct_answer": "SK Gaming",
+"incorrect_answers": [
+"Team Liquid",
+"Fnatic",
+"Virtus.pro"
+]
+},
+{
+"category": "General Knowledge",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which of these is the name of a Japanese system of alternative medicine, literally meaning &quot;finger pressure&quot;?",
+"correct_answer": "Shiatsu",
+"incorrect_answers": [
+"Ukiyo",
+"Majime",
+"Ikigai"
+]
+},
+{
+"category": "Geography",
+"type": "multiple",
+"difficulty": "hard",
+"question": "What year is on the flag of the US state Wisconsin?",
+"correct_answer": "1848",
+"incorrect_answers": [
+"1634",
+"1783",
+"1901"
+]
+},
+{
+"category": "General Knowledge",
+"type": "multiple",
+"difficulty": "easy",
+"question": "What is the Spanish word for &quot;donkey&quot;?",
+"correct_answer": "Burro",
+"incorrect_answers": [
+"Caballo",
+"Toro",
+"Perro"
+]
+},
+{
+"category": "Politics",
+"type": "boolean",
+"difficulty": "easy",
+"question": "The 2016 United States Presidential Election is the first time Hillary Clinton has run for President.",
+"correct_answer": "False",
+"incorrect_answers": [
+"True"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "boolean",
+"difficulty": "hard",
+"question": "In &quot;Metal Gear Solid 2&quot;, you will see through the eyes of Psycho Mantis if you go first person during his boss fight.",
+"correct_answer": "True",
+"incorrect_answers": [
+"False"
+]
+},
+{
+"category": "Science & Nature",
+"type": "multiple",
+"difficulty": "hard",
+"question": "&quot;The Big Bang Theory&quot; was first theorized by a priest of what religious ideology?",
+"correct_answer": "Catholic",
+"incorrect_answers": [
+"Christian",
+"Jewish",
+"Islamic"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "medium",
+"question": "By how many minutes are you late to work in &quot;Half-Life&quot;?",
+"correct_answer": "30",
+"incorrect_answers": [
+"5",
+"60",
+"15"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which of these songs by artist Eminem contain the lyric &quot;Nice to meet you. Hi, my name is... I forgot my name!&quot;?",
+"correct_answer": "Rain Man",
+"incorrect_answers": [
+"Without Me",
+"Kim",
+"Square Dance"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "easy",
+"question": "Which of these is the name of a song by Tears for Fears?",
+"correct_answer": "Shout",
+"incorrect_answers": [
+"Scream",
+"Yell",
+"Shriek"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "medium",
+"question": "What is the relationship between the band members of American rock band King of Leon?",
+"correct_answer": "Brothers &amp; cousins",
+"incorrect_answers": [
+"Childhood friends",
+"Former classmates",
+"Fraternity house members"
+]
+},
+{
+"category": "Science & Nature",
+"type": "multiple",
+"difficulty": "hard",
+"question": "Which of these is a stop codon in DNA?",
+"correct_answer": "TAA",
+"incorrect_answers": [
+"ACT",
+"ACA",
+"GTA"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "easy",
+"question": "In Pokemon Red &amp; Blue, what is the name of HM05?",
+"correct_answer": "Flash",
+"incorrect_answers": [
+"Strength",
+"Cut",
+"Fly"
+]
+},
+{
+"category": "Science: Computers",
+"type": "boolean",
+"difficulty": "easy",
+"question": "Time on Computers is measured via the EPOX System.",
+"correct_answer": "False",
+"incorrect_answers": [
+"True"
+]
+},
+{
+"category": "History",
+"type": "multiple",
+"difficulty": "hard",
+"question": "The Battle of Hastings was fought in which year?",
+"correct_answer": "1066",
+"incorrect_answers": [
+"911",
+"1204",
+"1420"
+]
+},
+{
+"category": "Science & Nature",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Who made the discovery of X-rays?",
+"correct_answer": "Wilhelm Conrad R&ouml;ntgen",
+"incorrect_answers": [
+"Thomas Alva Edison",
+"James Watt",
+"Albert Einstein"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "boolean",
+"difficulty": "hard",
+"question": "The band STRFKR was also briefly known as Pyramiddd.",
+"correct_answer": "True",
+"incorrect_answers": [
+"False"
+]
+},
+{
+"category": "Geography",
+"type": "multiple",
+"difficulty": "medium",
+"question": "What is the busiest port in Europe?",
+"correct_answer": "Port of Rotterdam",
+"incorrect_answers": [
+"Port of Antwerp",
+"Port of Hamburg",
+"Port of Amsterdam"
+]
+},
+{
+"category": "Sports",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which of the following Grand Slam tennis tournaments occurs LAST?",
+"correct_answer": "US Open",
+"incorrect_answers": [
+"French Open",
+"Wimbledon",
+"Australian Open"
+]
+},
+{
+"category": "Vehicles",
+"type": "multiple",
+"difficulty": "easy",
+"question": "Which car tire manufacturer is famous for its &quot;Eagle&quot; brand of tires, and is the official tire supplier of NASCAR?",
+"correct_answer": "Goodyear",
+"incorrect_answers": [
+"Pirelli",
+"Bridgestone",
+"Michelin"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "medium",
+"question": "In which year did the first Monster Hunter game get released?",
+"correct_answer": "2004",
+"incorrect_answers": [
+"2006",
+"2005",
+"2002"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Ellen McLain, the voice of GLaDOS in the Portal game series, is married to the voice actor for which Team Fortress 2 character?",
+"correct_answer": "Sniper",
+"incorrect_answers": [
+"Heavy",
+"Soldier",
+"Scout"
+]
+},
+{
+"category": "Science: Computers",
+"type": "boolean",
+"difficulty": "easy",
+"question": "Linux was first created as an alternative to Windows XP.",
+"correct_answer": "False",
+"incorrect_answers": [
+"True"
+]
+},
+{
+"category": "Entertainment: Television",
+"type": "multiple",
+"difficulty": "easy",
+"question": "When Donkey Kong died in the &quot;Donkey Kong Country&quot; episode &quot;It&#039;s a Wonderful Life&quot;, who was his guardian angel?",
+"correct_answer": "Eddie the Mean Old Yeti",
+"incorrect_answers": [
+"Kiddy Kong",
+"Diddy Kong",
+"King K. Rool"
+]
+},
+{
+"category": "Sports",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Who won the &quot;Champions League&quot; in 1999?",
+"correct_answer": "Manchester United",
+"incorrect_answers": [
+"Barcelona",
+"Bayern Munich",
+"Liverpool"
+]
+},
+{
+"category": "General Knowledge",
+"type": "multiple",
+"difficulty": "medium",
+"question": "When did the website &quot;Facebook&quot; launch?",
+"correct_answer": "2004",
+"incorrect_answers": [
+"2005",
+"2003",
+"2006"
+]
+},
+{
+"category": "History",
+"type": "boolean",
+"difficulty": "hard",
+"question": "During the Winter War, the amount of Soviet Union soliders that died or went missing was five times more than Finland&#039;s.",
+"correct_answer": "True",
+"incorrect_answers": [
+"False"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Who is the vocalist and frontman of rock band &quot;Guns N&#039; Roses&quot;?",
+"correct_answer": "Axl Rose",
+"incorrect_answers": [
+"Kurt Cobain",
+"Slash",
+"Bono"
+]
+},
+{
+"category": "Geography",
+"type": "multiple",
+"difficulty": "hard",
+"question": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+"correct_answer": "India",
+"incorrect_answers": [
+"Vietnam",
+"Thailand",
+"Indonesia"
+]
+},
+{
+"category": "Science & Nature",
+"type": "multiple",
+"difficulty": "easy",
+"question": "What animal takes part in Schr&ouml;dinger&#039;s most famous thought experiment?",
+"correct_answer": "Cat",
+"incorrect_answers": [
+"Dog",
+"Bat",
+"Butterfly"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "easy",
+"question": "In which mall does &quot;Dead Rising&quot; take place?",
+"correct_answer": "Willamette Parkview Mall",
+"incorrect_answers": [
+"Liberty Mall",
+"Twin Pines Mall",
+"Central Square Shopping Center"
+]
+},
+{
+"category": "Entertainment: Music",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Where did the British Boy Band &quot;Bros&quot; come from?",
+"correct_answer": "Camberley",
+"incorrect_answers": [
+"Guildford",
+"Aldershot",
+"Bagshot"
+]
+},
+{
+"category": "Entertainment: Board Games",
+"type": "multiple",
+"difficulty": "hard",
+"question": "When Magic: The Gathering was first solicited, which of the following was it originally titled?",
+"correct_answer": "Mana Clash",
+"incorrect_answers": [
+"Magic",
+"Magic Clash",
+"Mana Duels"
+]
+},
+{
+"category": "Geography",
+"type": "multiple",
+"difficulty": "medium",
+"question": "Which of the following is the longest river in Europe?",
+"correct_answer": "Volga",
+"incorrect_answers": [
+"Danube",
+"Ural",
+"Dnieper"
+]
+},
+{
+"category": "History",
+"type": "multiple",
+"difficulty": "easy",
+"question": "Which country was Josef Stalin born in?",
+"correct_answer": "Georgia",
+"incorrect_answers": [
+"Russia",
+"Germany",
+"Poland"
+]
+}
   ]
 }
 
 data[:"results"].each do | result |
   category = Category.find_or_create_by(name: result[:category])
-  
+
   trivia = Trivium.find_or_create_by(difficulty: result[:difficulty],
                         question: result[:question], category_id: category.id)
 
